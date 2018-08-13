@@ -9,8 +9,25 @@
     }).addTo(mymap);
 	
 //Custom Icons
+//my icon=purple
+var testMarkerPink = L.AwesomeMarkers.icon({
+icon: 'blue',
+markerColor: 'purple'
+});
+//close icons =green
 var testMarkerPink = L.AwesomeMarkers.icon({
 icon: 'play',
-markerColor: 'pink'
+markerColor: 'green'
 });
+//far icons =red
+var testMarkerPink = L.AwesomeMarkers.icon({
+icon: 'play',
+markerColor: 'red'
+});
+//all others =grey
+var testMarkerPink = L.AwesomeMarkers.icon({
+icon: 'play',
+markerColor: 'grey'
+});
+
 
