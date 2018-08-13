@@ -1,3 +1,8 @@
+//sources used to help build map.js
+//leaflet map=https://leafletjs.com/
+//location function=https://leafletjs.com/examples/mobile/
+//set interval=https://www.w3schools.com/jsref/met_win_setinterval.asp
+
 
 //basic leaflet map
     var mymap = L.map('mapid').setView([51.505, -0.09], 13);
@@ -29,5 +34,23 @@ var testMarkerPink = L.AwesomeMarkers.icon({
 icon: 'play',
 markerColor: 'grey'
 });
+
+//Function for showing user on the map or saying error
+function onLocationFound(e)[{
+	if (current position) {
+		mymap.removelayer(current_position);
+	}
+	current_position=L.marker(e.latlng,{icon:testMarkerPink}).addTo(mymap)
+}
+//Error handling if no location found
+function onLocationError(e){
+	alert(e.message);
+}
+map.on('locationfound', onLocationFound);
+mymap.on('locationerror', onLocationError);
+}
+
+//call location every 5 seconds- ongoing
+setInterval(locate,5000)
 
 
