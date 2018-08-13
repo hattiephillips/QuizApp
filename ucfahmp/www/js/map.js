@@ -7,14 +7,8 @@
       maxZoom: 18,
       id: 'mapbox.streets'
     }).addTo(mymap);
-
-
-  
+	
 //Custom Icons
-//Custom Icon Code- the following links incorporate the CSS required for custom icon creation -->
-<link rel="stylesheet" href=" ionicons.min.css">
-<link rel="stylesheet" href="leaflet.awesome-markers.css">
-< src="leaflet.awesome-markers.js">
 var testMarkerPink = L.AwesomeMarkers.icon({
 icon: 'play',
 markerColor: 'pink'
