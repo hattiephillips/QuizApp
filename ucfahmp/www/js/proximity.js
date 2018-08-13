@@ -1,3 +1,8 @@
+//math=https://www.w3schools.com/js/js_math.asp
+//dustance=https://www.htmlgoodies.com/beyond/javascript/calculate-the-distance-between-two-points-in-your-web-apps.html
+//proimity= https://www.sitepoint.com/introducing-proximity-api/
+//proximity= https://gist.github.com/icodejs/2644255
+
 function proximity (){
 qProximity(app_array);
 }
